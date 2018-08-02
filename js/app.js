@@ -54,8 +54,8 @@ Enemy.prototype.update = function(dt) {
         this.speed = Enemy.chooseSpeed();
     }
     // check for collisions and if true make player go back to start
-    if (this.x + 90 >= player.x && this.x <= player.x + 90 &&
-    this.y + 65 >= player.y && this.y <= player.y + 65) {
+    if (this.x + 70 >= player.x && this.x <= player.x + 70 &&
+    this.y + 60 >= player.y && this.y <= player.y + 60) {
         swal({
           type: 'error',
           title: 'You Loose!!',
